@@ -1,4 +1,4 @@
 <?php
-  include_once("/web/index.html");
+  include_once("./web/idex.htlm");
 
 ?>
