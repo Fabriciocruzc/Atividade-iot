@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        
+        <title>Atividade</title>
+        <meta charset="utf-8">
+
+
+        <!--
+        scripts relacionados ao chartjs
+        -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+        <script src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
+        <!-- 
+        scripts para o uso do AJAX e JQuery necessarios para requisicao de dados
+        do thing speak
+        -->
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+        <script src='https://www.google.com/jsapi'></script> 
+
+        <!-- 
+        scripts usados na aplicacao
+        chartline.js eh responsavel pelo grafico 1
+        chartjsline_thingspeak.js eh responsavel pelo grafico 2
+        onload.js eh responsavel por chamar as funcoes de inicializado dos dois graficos
+        -->
+       <script src="js/chartjsline.js"></script>
+        <script src="js/chartjsline_thingspeak.js"></script>
+        <script src="js/onload.js"></script>
+
+    </head>
+    <body>
+            <h1>Atividades Grafico</h1>
+
+        <div style="width:100%; overflow: hidden;">
+        
+            <div class="box" style="display: block;">
+              <p>Integrado do ThinkSpeak atavés de Iframe  <a href="https://thingspeak.com/channels/1293177">1293177</a></p>
+              <iframe width="440" height="300" align="center" style="border: 1px solid #cccccc;  " src="https://thingspeak.com/apps/matlab_visualizations/390655?size=iframe">
+              </iframe>
+            </div>
+        </div>
+          
+        <div style="width:75%;" id = "teste" >
+            <center>
+            <h1>Temperatura vs Tempo</h1>
+            </center>
+            <canvas id="canvas2"></canvas>
+        </div>
+    </body>
+</html>
